@@ -15,3 +15,25 @@ myVar = 5;
 // another example declaring a variable (a) and assigning it the value 7
 var a;
 a = 7;
+
+/* 
+you can also use the assignment operator to assign the value of a variable
+to another variable. 
+
+here is an example...
+var myVar;
+myVar = 5;
+
+declare the second variable
+var myNum;
+
+make myNum have the same value as myVar
+myNum = myVar;
+
+*/
+
+// here is another example using the variable a from line 17.
+var a;
+a = 7;
+var b;
+b = a;
