@@ -40,3 +40,38 @@ if you concatenate a string with an undefined variable, you will get a string of
 
 */
 
+/* 
+case sensitivity in variables:
+    variable names and function names are case senssitive
+
+    examples...
+    MYVAR != MyVar != myvar
+
+in JavaScript variable names are written using camelCase
+camelCase - multiword variable names have the first word in lowercase
+and the first letter of each subsequent word is capitalized
+
+another example of camelCase == properCamelCase
+
+*/
+
+/* 
+differences between var and let keywords:
+
+var makes it easier to overwrite variables, which makes it more difficult to prevent 
+accidently overriding variables in a large codebase
+
+the let keyword only allows a variable with the same name to be declared once.
+if you try to use the same variable name with the let keyword, an error message pops up.
+
+here is an example of changing two variables declared with the var keyword to the let keyword...
+
+*/
+
+// initial declaration 
+var catName = "Oliver";
+var catSound = "Meow!"; 
+
+// substitute var with let
+let catName = "Oliver";
+let catSound = "Meow!";
