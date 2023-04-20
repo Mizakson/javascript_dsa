@@ -1,4 +1,4 @@
-# module_2 es6
+# module_2
 
 2nd module in FreeCodeCamp JavaScript DSA Certification.
 
