@@ -75,3 +75,23 @@ var catSound = "Meow!";
 // substitute var with let
 let catName = "Oliver";
 let catSound = "Meow!";
+
+
+/* 
+const keyword:
+
+the const keyword makes variables read-only.
+once a variable is assigned with const it can't be reassigned.
+
+***
+developers and engineers use all caps when declaring constants in JavaScript.
+***
+
+here is an example...
+
+const FAV_PET = "Cats";
+FAV_PET = "Dogs";
+
+since the const was already assigned with the value "Cats", the result would be an error message.
+
+*/
