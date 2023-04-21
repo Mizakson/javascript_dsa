@@ -137,6 +137,26 @@ const firstName = "Max";
 const firstLetter = firstName[0];
 output would be - M
 
+using bracket notation to find the nth character in a string
+
+- use another number besides zero to find a certain letter in a string
+
+
+how to find the last character in a string:
+- .length - 1 
+
+ex.
+const firstName = "Max";
+const lastLetter = firstName[firstName.length - 1];
+
+or the nth to last character
+
+ex.
+const firstName = "Maxwell";
+const thirdToLastLetter = firstName[firstName.length - 3];
+- .length - n == nth to last character,
+in this case third to last
+
 */
 
 
@@ -154,6 +174,21 @@ let myStr = "Bob";
 myStr[0] = "J";
 Bob is the str value of the myStr variable, 
 to change the first letter to J, you would have to edit the assignment of the myStr variable
+
+*/
+
+/* 
+word blanks - filling in a sentence
+
+combine variable names and string concatenation.
+
+ex.
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+
+const wordBlanks = "The " + myNoun + " is very " + myAdjective + " and " + myVerb + " very " + myAdverb + ".";
 
 */
 
