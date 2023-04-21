@@ -120,4 +120,3 @@ myArray.unshift(["Paul", 35]);
 
 // see shopping_list.js, using knowledge on arrays. 
 
-
