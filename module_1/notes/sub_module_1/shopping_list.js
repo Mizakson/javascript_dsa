@@ -1,5 +1,6 @@
 // shopping list 
 // array practice
+// sub module 1 final program
 
 // ["item_name" (str), item_quantity (int)]
 const myList = [
