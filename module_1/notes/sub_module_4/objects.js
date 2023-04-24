@@ -196,9 +196,155 @@ function checkObj(obj, checkProp) {
 /* 
 manipulating complex objects:
 
+flexible data allows for the combiniations of different types of data,
+combinations of strings, numbers, booleans, arrays, functions, and objects
 
+
+ex.
+const ourMusic = [
+  {
+    "artist": "Daft Punk",
+    "title": "Homework",
+    "release_year": 1997,
+    "formats": [ 
+      "CD", 
+      "Cassette", 
+      "LP"
+    ],
+    "gold": true
+  }
+];
+
+
+
+adding another object to the array myMusic...
+const myMusic = [
+  {
+    "artist": "Billy Joel",
+    "title": "Piano Man",
+    "release_year": 1973,
+    "formats": [
+      "CD",
+      "8T",
+      "LP"
+    ],
+    "gold": true
+  },
+  
+  {
+    "artist": "DARKO US",
+    "title": "Oni",
+    "release_year": 2022,
+    "formats": [
+      "CD",
+      "Spotify",
+      "YouTube Music"
+    ]
+  }
+];
 
 
 */
+
+
+/* 
+accessing nested objects:
+
+nested objects are accessed by chaining together dot or bracket notation
+
+ex.
+const ourStorage = {
+  "desk": {
+    "drawer": "stapler"
+  },
+  "cabinet": {
+    "top drawer": { 
+      "folder1": "a file",
+      "folder2": "secrets"
+    },
+    "bottom drawer": "soda"
+  }
+};
+
+ourStorage.cabinet["top drawer"].folder2;
+ourStorage.desk.drawer;
+
+
+another ex.
+
+const myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+     },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+
+const gloveBoxContents = myStorage.car.inside["glove box"]; // getting the content of the glove box
+
+
+---
+---
+
+
+accessing nested arrays:
+
+similar to nested objects.
+
+ex.
+
+const ourPets = [
+  {
+    animalType: "cat",
+    names: [
+      "Meowzer",
+      "Fluffy",
+      "Kit-Cat"
+    ]
+  },
+  {
+    animalType: "dog",
+    names: [
+      "Spot",
+      "Bowser",
+      "Frankie"
+    ]
+  }
+];
+
+ourPets[0].names[1];
+ourPets[1].names[0];
+
+
+
+another ex.
+const myPlants = [
+  {
+    type: "flowers",
+    list: [
+      "rose",
+      "tulip",
+      "dandelion"
+    ]
+  },
+  {
+    type: "trees",
+    list: [
+      "fir",
+      "pine",
+      "birch"
+    ]
+  }
+];
+
+const secondTree = myPlants[1].list[1]; // accessing pine from the trees list
+
+
+*/
+
 
 
