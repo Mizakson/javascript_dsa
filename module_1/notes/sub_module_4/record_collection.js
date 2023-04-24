@@ -27,11 +27,11 @@ const recordCollection = {
     if (value === "") {
       delete records[id][prop]; // if there is no value entered in, the entry will be deleted
     } else if (prop != "tracks" && value != "") {
-      records[id][prop] = value
+      records[id][prop] = value // the id and prop represent the value of a specific record
     } else if (prop == "tracks" && value != "" && records[id].hasOwnProperty("tracks") === false) {
-      records[id][prop] = [value];
+      records[id][prop] = [value]; // if a records object doesn't have tracks as a property, creates an array for value
     } else if (prop == "tracks" && value != "") {
-      records[id][prop].push(value);
+      records[id][prop].push(value); // adds value to prop
     }
   
     return records;
