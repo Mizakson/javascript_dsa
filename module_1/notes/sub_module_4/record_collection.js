@@ -23,9 +23,21 @@ const recordCollection = {
   };
 
   // function to update records
-function updateRecords(records, id, prop, value) {
-return records;
-}
+  function updateRecords(records, id, prop, value) {
+    if (value === "") {
+      delete records[id][prop]; // if there is no value entered in, the entry will be deleted
+    } else if (prop != "tracks" && value != "") {
+      records[id][prop] = value
+    } else if (prop == "tracks" && value != "" && records[id].hasOwnProperty("tracks") === false) {
+      records[id][prop] = [value];
+    } else if (prop == "tracks" && value != "") {
+      records[id][prop].push(value);
+    }
+  
+    return records;
+  }
 
 
-updateRecords(recordCollection, 5439, 'artist', 'ABBA'); // testing the function
+// updateRecords(recordCollection, 5439, 'artist', 'ABBA'); // testing the function
+
+console.log(updateRecords(recordCollection, 5439, 'artist', 'ABBA')); 
