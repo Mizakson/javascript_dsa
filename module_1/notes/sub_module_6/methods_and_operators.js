@@ -9,7 +9,7 @@ Math.random can return a 0 and not a 1
 generate random whole numbers in JavaScript
 
 1. Math.random()
-2. multiply the generated decimal by 20 (to make the range between 1 and 9)
+2. multiply the generated decimal by 20 (to make the range between 0 and 19)
 3. use Math.floor, rounding the number down to its nearest whole number
 
 ex.
