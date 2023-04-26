@@ -8,9 +8,9 @@ Certification Status: IN PROGRESS
 
 Modules:
 
-1 - Basic JavaScript (IN PROGRESS)
+1 - Basic JavaScript (COMPLETED)
 
-2 - ES6
+2 - ES6 (IN PROGRESS)
 
 3 - Regular Expressions
 
