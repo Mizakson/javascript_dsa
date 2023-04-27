@@ -22,3 +22,22 @@ function editInPlace() {
 
 }
 editInPlace();
+
+
+// preventing object mutation
+
+/* 
+to make sure the data in the object is immutable
+use the Object.freeze function
+
+pseudocode = Object.freeze(objName);
+
+*/
+
+// ex
+function freezeObj() {
+  const MATH_CONSTANTS = {
+    PI: 3.14
+  };
+  Object.freeze(MATH_CONSTANTS); 
+}
