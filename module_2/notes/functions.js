@@ -55,6 +55,32 @@ multiplier(4, 2);
 
 /* 
 setting default parameters for functions
+put the default value in the parentheses
+
+ex.
+
+const greeting = (name = "Anonymous") => "Hello " + name;
+
+console.log(greeting("Max")); // Hello Max
+console.log(greeting()); // Hello Anonymous
+
+
+---
+---
+
+the rest parameter with function parameters:
+
+rest parameter allows you create functions that take a variable number of arguments.
+these arguments are stored in an array (can be accessed later from inside the function).
+
+ex.
+
+function howMany (*..args) {
+    return "You have passed " + args.length + " arguments.";
+}
+
+console.log(howMany(0, 1, 2)); // 3 args
+console.log(howMany("string", null, [1, 2, 3], { })); // 4 args
 
 
 */
