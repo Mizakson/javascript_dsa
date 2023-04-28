@@ -1,7 +1,0 @@
-// notes on arrow functions
-
-/* 
-
-
-
-*/
