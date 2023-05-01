@@ -38,3 +38,16 @@ const novel = new Book('anonymous');
 console.log(novel.writer);
 novel.writer = 'newAuthor';
 console.log(novel.writer);
+
+/* 
+the console would display
+anonymous
+newAuthor
+
+getters and setters are important because they hide internal
+implementation details
+
+it is also convention to precede the name of a private variable with an underscore,
+this is just a naming convention, this doesn't make the variable itself private.
+
+*/
