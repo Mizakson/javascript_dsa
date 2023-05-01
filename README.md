@@ -10,9 +10,9 @@ Modules:
 
 1 - Basic JavaScript (COMPLETED)
 
-2 - ES6 (IN PROGRESS)
+2 - ES6 (COMPLETED)
 
-3 - Regular Expressions
+3 - Regular Expressions (IN PROGRESS)
 
 4 - Debugging
 
