@@ -1,0 +1,6 @@
+// notes on promises
+
+/* 
+
+
+*/
