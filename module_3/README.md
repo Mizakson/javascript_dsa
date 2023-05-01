@@ -2,7 +2,7 @@
 
 3rd Module in FreeCodeCamp JavaScript DSA Certification.
 
-This directory will have my notes on regular expressions.
+This directory has my notes on regular expressions.
 
 Best, 
 
