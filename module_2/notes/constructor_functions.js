@@ -1,0 +1,6 @@
+// notes on constructor functions
+
+/* 
+
+
+*/
