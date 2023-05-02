@@ -20,7 +20,7 @@ testRegex.test(testStr); // using the test method
 // returns true
 
 /* 
-the test method is case sensitive
+the default test method is case sensitive
 
 ex.
 if i wanted to check 'Java' in a regex
@@ -36,5 +36,18 @@ its possible to have multiple possibilites using | operator
 ex.
 /stringOne|stringTwo/;
 
+*/
+
+/* 
+ignore case while matching
+
+you can match both cases (string you want to match, the actual string)
+by using a flag.
+
+its possible to ignore case sensitivity by ignoring the i flag.
+
+pseudocode...
+
+/testString/i
 
 */
