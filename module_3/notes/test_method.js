@@ -50,4 +50,6 @@ pseudocode...
 
 /testString/i
 
+put the flag at the end of the second backslash
+
 */
