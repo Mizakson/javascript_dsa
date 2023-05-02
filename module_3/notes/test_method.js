@@ -18,3 +18,23 @@ let testRegex = /Java/; // string i want to check
 testRegex.test(testStr); // using the test method
 
 // returns true
+
+/* 
+the test method is case sensitive
+
+ex.
+if i wanted to check 'Java' in a regex
+JAVA or java would return false
+
+*/
+
+/* 
+test method with multiple possibilities
+
+its possible to have multiple possibilites using | operator
+
+ex.
+/stringOne|stringTwo/;
+
+
+*/
