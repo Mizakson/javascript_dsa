@@ -223,6 +223,40 @@ restricting possible usernames
 /* 
 matching whitespace:
 
+its also possible to match the whitespace (spaces) 
+between letters
+
+shorthand = \s
+
+----
+
+matching non-whitespace characters:
+
+its possible to search for everything except whitespace
+
+shorthand = \S
+
+** add .length to the end of the match statement to return the length of the string
+
+pseudocode
+myString.match(myRegex).length;
+
+*/
+
+/* 
+specifying upper and lower number of matches:
++ sign means look for one or more chars
+* means to look for zero or more chars
+
+but sometimes you match a certain range of patterns.
+this is possible using quantity specifiers (curly brackets)
+
+you put two numbers inside of the curly brackets, foor the upper and 
+lower number of patterns
+
+ex.
+
+
 
 */
 
