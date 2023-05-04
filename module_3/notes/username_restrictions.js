@@ -34,5 +34,6 @@ breaking down the regex:
 - flags at the end of the regex
 - global, ignore case sensitivity
 
+global flag is optional
 
 */
