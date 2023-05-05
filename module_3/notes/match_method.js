@@ -293,4 +293,9 @@ basically means that the element before the question mark is deemed optional
 
 */
 
+/* 
+reusing patterns using capture groups:
 
+
+
+*/
