@@ -256,9 +256,41 @@ lower number of patterns
 
 ex.
 
+str1 = 'goooool'
+str2 = 'goal'
+
+regex = /go{3,5}/;
+
+regex.test(str1); // true
+regex.test(str2); // false
+
+-----
+
+only specifying the lower number of matches:
+only fill in the first number in the curly braces
+{3,}
+
+
+or
+
+specifying the exact number of matches:
+dont put a comma in the curly braces
+{3}
 
 
 */
 
+/* 
+checking for all or none:
+
+some patterns may have parts that don't exist,
+but its still important to check for them.
+
+using the question mark (?),
+its poosible to check for zero or one of the previous element,
+basically means that the element before the question mark is deemed optional
+
+
+*/
 
 
