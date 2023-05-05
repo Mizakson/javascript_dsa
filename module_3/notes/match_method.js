@@ -296,6 +296,19 @@ basically means that the element before the question mark is deemed optional
 /* 
 reusing patterns using capture groups:
 
+capture groups are used to find repeated substrings.
+
+they are constructed by enclosing the regex pattern to be captured
+in parentheses
+
+for test functions, returns boolean
+for match functions, returns the string(s)
+
+ex.
+let repeatStr = "row row row your boat";
+let repeatRegex = /(\w+) \1 \1/;
+repeatRegex.test(repeatStr); // Returns true
+repeatStr.match(repeatRegex); // Returns ["row row row", "row"]
 
 
 */
