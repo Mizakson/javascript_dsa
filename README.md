@@ -12,9 +12,9 @@ Modules:
 
 2 - ES6 (COMPLETED)
 
-3 - Regular Expressions (IN PROGRESS)
+3 - Regular Expressions (COMPLETED)
 
-4 - Debugging
+4 - Debugging (IN PROGRESS)
 
 5 - Basic Data Structures
 
