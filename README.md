@@ -14,9 +14,9 @@ Modules:
 
 3 - Regular Expressions (COMPLETED)
 
-4 - Debugging (IN PROGRESS)
+4 - Debugging (COMPLETED)
 
-5 - Basic Data Structures
+5 - Basic Data Structures (IN PROGRESS)
 
 6 - Basic Algorithm Scripting
 
