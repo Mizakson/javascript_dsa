@@ -2,7 +2,7 @@
 
 5th Module in FreeCodeCamp JavaScript DSA Certification.
 
-This directory will have my notes on basic data structures.
+This directory has my notes on basic data structures (arrays & objects).
 
 Best, 
 
