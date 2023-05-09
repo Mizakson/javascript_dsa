@@ -60,4 +60,47 @@ add specific items using splice()
 the third parameter in splice is used to add to the array
 takes on or more elements
 
+-------
+-------
+
+its also possible to copy items in an array using slice (not splice)
+to create an new array by extracting the elements from 
+the existing array
+
+ex.
+
+let weatherConditions = ['rain', 'snow', 'sleet', 'hail', 'clear'];
+let todaysWeather = weatherConditions.slice(1, 3);
+
+todaysWeather would output ['snow', 'sleet']
+weatherConditions would still have ['rain', 'snow', 'sleet', 'hail', 'clear']
+
+
+-------
+-------
+
+copying an array with the spread() operator
+- slice allows elements of an array to be copied
+- spread allows arrays themselves to be copied
+
+syntax for spread is ...
+
+ex.
+
+let arr1 = [1, 2, 3, 4];
+let arr2 = [...arr1];
+
+
+combining arrays with the spread operator
+- when created a new array for the combined array,
+list the array in spread syntax as one of the elements 
+in the new array
+
+ex.
+let arr1 = [3, 4];
+let arr2 = [1, 2, ...arr1, 5, 6];
+
+
+
+
 */
