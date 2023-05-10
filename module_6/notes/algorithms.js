@@ -1,4 +1,5 @@
 // notes on algorithms
+// examples of basic algorithms
 
 // -----------------------------
 
@@ -25,4 +26,16 @@ function convertCtoF(celsius) {
     return fahrenheit;
   }
   
-  convertCtoF(30);
+  convertCtoF(24);
+
+
+// -----------------------------
+
+
+// algorithm to reverse a string
+
+
+
+
+
+
