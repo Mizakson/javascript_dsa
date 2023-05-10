@@ -16,9 +16,9 @@ Modules:
 
 4 - Debugging (COMPLETED)
 
-5 - Basic Data Structures (IN PROGRESS)
+5 - Basic Data Structures (COMPLETED)
 
-6 - Basic Algorithm Scripting
+6 - Basic Algorithm Scripting (IN PROGRESS)
 
 7 - Object Oriented Program (OOP)
 
