@@ -2,7 +2,7 @@
 
 7th Module in FreeCodeCamp JavaScript DSA Certification.
 
-This directory will have my notes on object-oriented programming (OOP).
+This directory has my notes on object-oriented programming (OOP).
 
 Best, 
 
