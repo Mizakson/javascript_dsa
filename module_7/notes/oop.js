@@ -386,4 +386,199 @@ let player = new SoccerPlayer();
 let player = Object.create(SoccerPlayer.prototype);
 Object.create(obj) creates a new object and sets obj as the new object's prototype.
 
+
+next step...
+setting the prototype of the subtype (child) to be an instance of the supertype
+using SoccerPlayer:
+
+Goalkeeper.prototype = Object.create(SoccerPlayer.prototype)
+// this sets Goalkeeper to be an instance of SoccerPlayer
+
+a prototype is like a recipe for creating an object,
+using this analogy, Goalkeeper now includes all of 
+the key ingredients from SoccerPlayer.
+
+
+-------------
+-------------
+
+how to reset an inherited constructor property:
+
+when an object inherits its prototype from another object,
+it also inherits the supertype's constructor property.
+
+you have to manually set the subtype's constructor property.
+
+ex.
+Goalkeeper.prototype.constructor = Goalkeeper;
+neuer.constructor // a gk instance of neuer has the constructor of Goalkeeper, not SoccerPlayer
+
+
 */
+
+
+// -----------------------------
+
+/* 
+adding methods after inheritance:
+
+a constructor function that inherits its prototype object from a supertype
+constructor function can still have its own methods in addition to inherited ones.
+
+pseudocode...
+
+ConstructorSubtype.prototype.newMethod = function() {
+    code here
+}
+
+ex.
+
+Goalkeeper.prototype.gkMsg = function() {
+    console.log("I play goalkeeper.");
+};
+
+// instances of Goalkeeper will have the shirtNum() method and 
+the new gkMsg() method
+
+
+------------
+------------
+
+overriding inherited methods:
+
+it is also possible to override an inherited method,
+add a method to (pseudocode) ChildObject.prototype using the same method name
+as the one to override.
+
+ex.
+
+function Animal() { }
+Animal.prototype.eat = function() {
+    return "nom nom";
+};
+
+function Bird() { }
+
+Bird.prototype = Object.create(Animal.prototype);
+
+Bird.prototype.eat = function() {
+    return "peck peck";
+};
+
+
+*/
+
+// -----------------------------
+
+/* 
+Mixin:
+
+used when inheritance is not the best solution.
+
+for example, shirtNum can also work for other athletes, not just
+soccer players. this means that even though these objects are different types,
+they still have common behavior.
+
+mixins allow ohter objects to use a collection of functions.
+
+ex.
+
+let shirtNumMixin = function(obj) {
+    obj.shirtNum = function() {
+        console.log("Shirt Number: " + this.shirtNum);
+    }
+};
+
+
+// create unrelated objects 
+let lebron = {
+    name: "LeBron James",
+    team: "LA Lakers"
+};
+
+let namath = {
+    name: "Joe Namath";
+    team: "NY Jets"
+};
+
+// use the mixin
+
+shirtNumMixin(lebron);
+shirtNumMixin(namath);
+
+// both objects now have the shirtNum function
+lebron.shirtNum();
+namath.shirtNum();
+
+
+*/
+
+// -----------------------------
+
+/* 
+using closure to protect properties with an object
+from being modified externally
+
+The simplest way to make a public property (value can be changed easily)
+to a private once is by creating a variable within the constructor function.
+This changes the scope of that variable to be within the constructor function, not globally.
+The variable can only be accessed and changed by methods also within the constructor function.
+
+ex.
+
+function Bird() {
+    let hatchedEgg = 10;
+
+    this.getHatchedEgg = function() {
+        return hatchedEgg;
+    };
+}
+
+let chicken = new Bird();
+chicken.getHatchedEgg();
+
+
+*/
+
+// -----------------------------
+
+/*
+Immediately Invoked Function Expression (IIFE)
+
+a common pattern in JavaScript is to execute a functino as soon as 
+it is declared.
+
+ex,
+(function() {
+    console.log("Vroom Vroom");
+})();
+
+this example is an anonymous function expression that execute right away,
+the function has no name and is not stored in a value. the two parentheses
+at the end cause the expression to be immediately executed.
+
+
+---------
+---------
+
+creating a module using IIFE
+ex. code
+
+let funModule = (function () {
+  return { 
+    isCuteMixin: function(obj) {
+    obj.isCute = function() {
+      return true;
+    };
+  },
+  singMixin: function(obj) {
+    obj.sing = function() {
+      console.log("Singing to an awesome tune");
+    };
+  }
+}
+})();
+
+
+*/
+
