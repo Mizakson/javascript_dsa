@@ -218,3 +218,88 @@ ex. arr1.concat(arr2);
 
 
 */
+
+/* 
+the .reduce() method:
+
+the most general of all array operations in JavaScript,
+almost any array processing problem can be solved using the reduce method
+
+the reduce method allows for more general forms of array processing,
+.filter and .map can also be derived as special applications of reduce.
+
+the reduce method iterates over each item in an array and 
+returns a single value (string,, number, object, array), which is
+achieved by using a callback function that is called on each iteration
+
+the callback function accepts 4 arguments...
+
+1. accumulator
+gets assigned the return value of the callback function
+from the previous iteration
+
+2. the current element being processed
+
+3. index of the element being processed
+
+4. the array which reduce is called upon
+
+
+reduce also has another parameter besides the callback function,
+this parameter takes an initial value for the accumulator.
+if this parameter is not used, the first iteration is skipped
+and the second iteration gets passed the first element of the array
+as the accumulator.
+
+*/
+
+/* 
+example of high-order functions
+
+use case scenario...
+
+sqaureList function that returns a new array containing the squares of only positive integers (not decimals),
+when an array of real numbers is passed to it
+
+code w/ explanation
+
+const squareList = arr => {
+
+  const integerFilter = arr.filter(x => x > 0 && x % parseInt(x) === 0);
+  const squareIntegers = integerFilter.map(x => x * x);
+  return squareIntegers;
+};
+
+
+statement 1.
+filters the array to just positive integers,
+if x > 0 is condition 1
+if parseInt(x) === 0 is condition two, parseInt parses through a string for integers
+
+
+*/
+
+
+/* 
+sort method:
+
+sorts the elements of an array according to the callback function
+
+notes on the callback function
+usually called compareFunction or function
+with parameters a and b
+
+if the compareFunction returns a value less than 0, a will come before b
+if the compareFunction returns a value greater than 0, b will come before a
+if the compareFunction returns a value equal to 0, a and b will remain unchanged
+
+*/
+
+/* 
+split method:
+
+
+
+
+*/
+
