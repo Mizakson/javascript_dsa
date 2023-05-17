@@ -71,5 +71,150 @@ instead of using a for loop, you can use the map() method which handles
 the details of iterating over an array. This helps avoid semantic errors
 
 
+-------
+-------
+
+avoiding mutations and the side effects of functional programming:
+
+sometimes when you call a function on a variable, array or object
+the function changes the variable or something in the object (side effect)
+basically unintentional changes in code
+
+one core principle of functional programming is to not change things,
+changes lead to bugs. It's easier to prevent bugs knowing that
+your functions don't change anything (including the function arguments
+or any global variable)
+
+changing or altering things in functional programming is called mutation, and the 
+outcome of a mutation is called a side effect.
+
+ideal functions are pure functions (don't cause side effects)
+
+
+-------
+-------
+
+passing arguments to avoid external dependence in a function:
+
+another principle in functional programming is to always declare dependencies 
+explicitly, meaning if a function depends on a variable or object being present, then pass
+that variable or object directly into the function as an argument.
+
+benefits...
+1. function is easier to test (you know exactly what input it takes, not dependent on anything else)
+2. more confidence when altering/removing/adding code (you know what you can and cannot change, you can see potential traps)
+3. function would always produce the same output for the same set of inputs, no matter what part of the code executes it
+
+
+*/
+
+
+/* 
+.map() method:
+
+used to extract data from an array
+
+the map method iterates over in each item in an array
+and returns a new array containing the results of calling 
+the callback function on each element, without mutating the original array
+
+when the callback is used it is passed 3 arguments
+1. current element being processed
+2. index of that element
+3. array upon which the map method was called on
+
+
+
+--------
+
+implementing map on a prototype:
+
+map is a pure function, and its output is solely dependent on
+its inputs. it takes another function as its argument
+
+ex.
+writing my own map method titled myMap
+same as the map method but spelt out in code
+
+Array.prototype.myMap = function(callback) {
+  const newArray = [];
+  for (let i = 0; i < this.length; i++) {
+    newArray.push(callback(this[i], i, this));
+  }
+  return newArray;
+};
+
+
+*/
+
+
+/* 
+.filter() method:
+
+calls a function on each element oof an array and returns a new array containing
+only the elements for which that function returns a truthy value (true for Booleans).
+Basically, it filters the array based on the function passed to it, without modifying the
+original array
+
+callback function also accepts three arguments
+1. current element being processed
+2. index of that element
+3. the array that the filter was called on
+
+
+writing out the .filter() method using a prototype
+
+Array.prototype.myFilter = function(callback) {
+  const newArray = [];
+  for (let i = 0; i < this.length; i++) {
+    if (callback(this[i], i, this) == true) {
+      newArray.push(this[i]);
+    }
+  }
+  return newArray;
+};
+
+
+*/
+
+/* 
+slice method:
+
+returns a copy of certain elements in an array.
+
+takes two arguments...
+1. index of where to begin slicing
+2. where to end the slice (non-inclusive)
+
+if arguments are not provided the default is to start at the beginning
+and go through the end.
+
+doesn't mutate the original array, makes a new one
+
+------
+------
+
+splice is used when you want to remove items and keep
+the rest of the array
+
+splice takes 2 arguments...
+1. where to start removing items
+2. the number of items to remove
+
+
+*/
+
+/* 
+concat method:
+
+used to combine two arrays or to combine strings
+
+for arrays...
+the method is called on one, then another array is the argument for concat
+the array passed through concat is added to the end of the first array.
+it returns a new array, doesn't mutate the original
+
+ex. arr1.concat(arr2);
+
 
 */
