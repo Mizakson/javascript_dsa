@@ -18,11 +18,11 @@ Modules:
 
 5 - Basic Data Structures (COMPLETED)
 
-6 - Basic Algorithm Scripting (IN PROGRESS)
+6 - Basic Algorithm Scripting (COMPLETED)
 
-7 - Object Oriented Program (OOP)
+7 - Object Oriented Program (COMPLETED)
 
-8 - Functional Programming
+8 - Functional Programming (IN PROGRESS)
 
 9 - Intermediate Algorithm Scripting
 
