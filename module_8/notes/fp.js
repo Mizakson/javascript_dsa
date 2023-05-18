@@ -298,8 +298,99 @@ if the compareFunction returns a value equal to 0, a and b will remain unchanged
 /* 
 split method:
 
+splits a string into an array of strings.
+it takes an argument which is called a delimiter,
+that can be used to break up the string or regular expression
+
+key examples...
+
+if the delimiter is a space, then you get
+an array of words
+but if the delimiter is an empty string, then you 
+get an array of each character in the string
+
+strings are immutable so split makes it easier to work with strings
 
 
+*/
+
+/* 
+join method:
+
+used to join the elements of an array together to create a string
+
+think of it as the opposite of split.
+
+it takes an argument for the delimiter, just like split.
+
+
+*/
+
+/* 
+example of functional programming:
+
+use case - converting strings to URL slugs
+takes the title and makes a new string and hyphenates it
+and converts the string to lowercase
+
+
+function urlSlug(title) {
+  return title
+  .toLowerCase()
+  .trim()
+  .split(/\s+/)
+  .join("-");
+
+}
+
+*/
+
+
+/* 
+every method:
+
+checks if every element in an array meets a certain condition
+returns a boolean
+
+
+example.
+checking if a number is positive
+
+function checkPositive(arr) {
+  return arr.every(a => a > 0);
+}
+
+-----------
+-----------
+
+some method:
+
+used to check if any element meets a certain condition,
+also returns a boolean
+
+
+*/
+
+
+/* 
+introduction to currying and partial application
+
+the arity of a function is the number of arguments it requires,
+currying a function means to convert a function of N arity into function
+of arity 1
+
+restructures a function so that it takes one argument, then returns another 
+function that takes the next argument... keeps going
+
+currying is useful if you can't provide all of the arguments at one time,
+you can save each function call into a variable, holding the returned function reference
+that takes the next argument when it is available
+
+
+partial application...
+
+applying a few arguments to a function at a time and returning another 
+function that is applied to more arguments.
 
 */
 
