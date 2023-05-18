@@ -22,9 +22,9 @@ Modules:
 
 7 - Object Oriented Program (COMPLETED)
 
-8 - Functional Programming (IN PROGRESS)
+8 - Functional Programming (COMPLETED)
 
-9 - Intermediate Algorithm Scripting
+9 - Intermediate Algorithm Scripting (IN PROGRESS)
 
 10 - Projects
 
