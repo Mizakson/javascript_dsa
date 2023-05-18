@@ -20,7 +20,7 @@ Modules:
 
 6 - Basic Algorithm Scripting (COMPLETED)
 
-7 - Object Oriented Program (COMPLETED)
+7 - Object Oriented Programming (COMPLETED)
 
 8 - Functional Programming (COMPLETED)
 
