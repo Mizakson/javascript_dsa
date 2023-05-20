@@ -167,3 +167,42 @@ function translatePigLatin(str) {
 
 // ---------------------------------
 
+// search and replace algorithm
+
+function myReplace(str, before, after) {
+
+  /* 
+  more complex algorithm, search and replace
+
+  reading resources on this type of algorithm and looking at possible solutions
+  while trying to understand them
+  */
+  
+  /* 
+  capitalize the first char of the str and then concat that char to 
+  to the rest of the remaining str (using the substring() method)
+  */
+
+  const capitalizedBefore = before[0].toUpperCase() + before.substring(1);
+  const capitalizedAfter = after[0].toUpperCase() + after.substring(1);
+
+  /* 
+  if statement:
+  if the before string is capitalized, preserve the case of the 1st letter
+  by replacing it with capitalized after
+  
+  replaces before with capitalizedAfter variable
+  or
+  replaces the before string with the after string
+  (make the after to lowercase in case it was already capitalized)
+  */
+
+  if (before === capitalizedBefore) {
+    return str.replace(before, capitalizedAfter);
+  } else {
+    return str.replace(before, after.toLowerCase());
+  }
+
+}
+
+// ---------------------------------
