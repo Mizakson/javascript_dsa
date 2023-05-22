@@ -206,3 +206,72 @@ function myReplace(str, before, after) {
 }
 
 // ---------------------------------
+
+/* 
+algorithm that pairs a DNA strands,
+A returns A, T
+T returns T, A
+C returns C, G
+G returns G, C
+
+a str is passed through the function and arrays of the pairs for each individual character
+are returned
+
+*/
+
+function pairElement(str) {
+  /*
+   4 possible chars in the str A, T, C, G 
+   A and T will always be paired
+   C and G will always be paired 
+   */
+  
+  // switch statement
+  
+  const pairMatch = function(letter) {
+    switch (letter) {
+      case "A":
+        return ["A", "T"];
+      case "T":
+        return ["T", "A"];
+      case "C":
+        return ["C", "G"];
+      case "G":
+        return ["G", "C"];
+    }
+  };
+  
+  const finalArr = [];
+  for (let i = 0; i < str.length; i++) {
+    finalArr.push(pairMatch(str[i]));
+    }
+  
+  return finalArr;
+  
+  }
+
+// ---------------------------------
+
+/* 
+algorithm that finds the missing letter passed through the letter
+range and returns it
+
+if all letters are in the string return undefined
+
+*/
+
+function fearNotLetter(str) {
+
+  for (let i = 0; i < str.length; i++) {
+    
+      // character code
+      let charCode = str.charCodeAt(i);
+    
+      // if code was skipped or not equal to first char + i, a letter was skipped
+      if (charCode !== str.charCodeAt(0) + i) {
+          return String.fromCharCode(charCode - 1);
+      }
+  }
+  return undefined;
+
+}
