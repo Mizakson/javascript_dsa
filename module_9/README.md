@@ -11,6 +11,10 @@ This is more challenging than the basic algorithms, my initial notes
 in the first file might not be the most in-depth due to it being my
 first attempts at solving moderately complex algorithm problems.
 
+The main goal of this module is to hone my reasoning skills and 
+learn how to think out solutions to problems into code, learning
+how to think algorithmically.
+
 Best, 
 
 Mizakson
