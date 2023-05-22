@@ -13,7 +13,7 @@ first attempts at solving moderately complex algorithm problems.
 
 The main goal of this module is to hone my reasoning skills and 
 learn how to think out solutions to problems into code, learning
-how to think algorithmically.
+how to think algorithmically. 
 
 Best, 
 
