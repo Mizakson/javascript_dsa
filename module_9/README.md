@@ -8,7 +8,7 @@ This directory has my notes on intermediate algorithm scripting.
 alogrithms_2.js ***
 
 This is more challenging than the basic algorithms, my initial notes
-in the first file might not be the most in-depth due to it being my
+in the first file (algorithms.js) might not be the most in-depth due to it being my
 first attempts at solving moderately complex algorithm problems.
 
 The main goal of this module is to hone my reasoning skills and 
