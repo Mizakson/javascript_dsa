@@ -270,3 +270,90 @@ with the 2 parameters 1 and 3, that smallest common multiple that is also evenly
 divisible by all numbers between 1 and 3, the answer is 6
 
 */
+
+/* 
+initial thought process:
+
+  smallest common multiple:
+  first have to make a helper function that iterates through
+  arr[0] and arr[length - 1]
+
+  have to find multiples of those two numbers and push them to unique arrays
+  then have to check if the first match in numbers between the two arrays
+
+  last:
+  instead of finding the smallest common multiple of the first and last items,
+  make another loop that iterates through every number in the arguments arr,
+  and returns multiples of them in separate arrays, then return the first match
+  from all of the unique arrays
+
+  -----------------------------------------------------------------------------------------------
+ 
+  extremely difficult problem
+  looked at documentation and tried various possible solutions
+
+  having trouble with the global variables that are initialized in the beginning
+  and what exactly constitues the least common multiple
+
+  going to look at the solution line by line and understand it that way,
+  this problem is more complex than all of the previous problems in this module
+
+  i wrote my initial approach and tried to implement it into code, but the tests 
+  were still failed.
+
+  below is one of the many attempts i had at solving this problem
+
+    // use array.from to iterate through the array at certain terms
+  const firstTermArr = Array.from(new Array(arr[0]), x => x += x);
+  const lastTermArr = Array.from(new Array(arr[arr.length - 1]), x => x += x);
+
+  i tried to create new array objects for specific elements in the array, 
+  the trouble for me is about how to apply this type of operation to all of the 
+  elements in the array, and then compare them, returning the final value
+
+  going back to this problem at a later time
+
+*/
+
+
+
+/* 
+_________________________________________________________________________________________________
+_________________________________________________________________________________________________
+_________________________________________________________________________________________________
+_________________________________________________________________________________________________
+_________________________________________________________________________________________________
+
+*/
+
+
+
+/* 
+algorithm 14/21: drop it
+
+scenario --
+given the array (arr), iterate through and remove each element
+starting from the first element until the function returns true when the 
+iterated element is passed through it.
+return the rest of the array once the condition is satisfied, otherwise
+arr should be returned as an empty array.
+
+*/
+
+  /*
+  attempt 1: 4/6 tests passed
+
+
+function dropElements(arr, func) {
+  const finalArr = [];
+
+  
+  for (let i = 0; i < arr.length; i++) {
+    if (func(arr[i]) === true) {
+      finalArr.push(arr[i]);
+    }
+  }
+
+  return finalArr;
+}
+  */

@@ -2,31 +2,9 @@
 
 Certificate #2 from FreeCodeCamp, JavaScript DSA (Data Structures + Algorithms).
 
-In this repo, I will document my learning progress and post my projects.
-
-Certification Status: IN PROGRESS
-
-Modules:
-
-1 - Basic JavaScript (COMPLETED)
-
-2 - ES6 (COMPLETED)
-
-3 - Regular Expressions (COMPLETED)
-
-4 - Debugging (COMPLETED)
-
-5 - Basic Data Structures (COMPLETED)
-
-6 - Basic Algorithm Scripting (COMPLETED)
-
-7 - Object Oriented Programming (COMPLETED)
-
-8 - Functional Programming (COMPLETED)
-
-9 - Intermediate Algorithm Scripting (IN PROGRESS)
-
-10 - Projects
+For now, I am taking a break from FreeCodeCamp and will be focusing on more project-based learning
+with The Odin Project. FreeCodeCamp has been a tremendous help in learning the basics of web development, and
+I am really excited to dive into more project-based learning with The Odin Project.  
 
 Best, 
 
